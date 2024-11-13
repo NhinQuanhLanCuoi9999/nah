@@ -25,9 +25,9 @@ while running:
         if event.type == pygame.QUIT:
             continue  # Bỏ qua sự kiện thoát
 
-        # Chặn mọi sự kiện phím nhấn
-        if event.type == pygame.KEYDOWN:
-            continue  # Bỏ qua tất cả các phím nhấn
+        # Chặn mọi sự kiện phím nhấn và phím thả
+        if event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
+            continue  # Bỏ qua tất cả các phím nhấn và phím thả
 
     # Vẽ ảnh lên màn hình
     screen.blit(image, (0, 0))
