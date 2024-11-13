@@ -11,7 +11,7 @@ screen_width, screen_height = pygame.display.Info().current_w, pygame.display.In
 screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)  # Thêm pygame.FULLSCREEN
 
 # Tải ảnh
-image = pygame.image.load("1.png")
+image = pygame.image.load("a.png")
 image = pygame.transform.scale(image, (screen_width, screen_height))  # Thay đổi kích thước ảnh để lấp đầy màn hình
 
 # Vô hiệu hóa toàn bộ bàn phím bằng cách không xử lý các sự kiện phím
