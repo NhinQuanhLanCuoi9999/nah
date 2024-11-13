@@ -6,7 +6,9 @@ pygame.init()
 
 # Lấy kích thước màn hình
 screen_width, screen_height = pygame.display.Info().current_w, pygame.display.Info().current_h
-screen = pygame.display.set_mode((screen_width, screen_height))  # Thiết lập màn hình với kích thước toàn màn hình
+
+# Thiết lập màn hình với chế độ toàn màn hình
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)  # Thêm pygame.FULLSCREEN
 
 # Tải ảnh
 image = pygame.image.load("1.png")
